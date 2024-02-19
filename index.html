@@ -3,10 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Momentum</title>
   </head>
   <body>
-    <script src="./app.js"></script>
+    <!-- form 내에 input이 하나만 있는 경우 엔터를 누르면 자동으로 submit됨(but!엔터를 누를 때마다 새로고침이 된다는 단점이 있음.ㅠ) -->
+    <form id="login-form">
+      <input required maxlength="7" type="text" placeholder="이름이 뭐에옹?" />
+      <button>로그인</button>
+    </form>
+    <h1 id="clock"></h1>
+    <h2 id="greeting" class="hidden"></h2>
+    <script src="./js/clock.js"></script>
+    <script src="./js/greeting.js"></script>
   </body>
 </html>
